@@ -1,0 +1,115 @@
+.compliance {
+  padding: 100px 0;
+  background: var(--grey-light);
+}
+
+.compliance__inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.compliance__title,
+.compliance__subtitle {
+  color: inherit;
+}
+
+.compliance__subtitle {
+  color: var(--text-mid);
+  margin-bottom: 36px;
+}
+
+.compliance__reg-box {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.compliance__reg-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.compliance__reg-row:last-child {
+  border-bottom: none;
+}
+
+.compliance__reg-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-light);
+  flex-shrink: 0;
+  min-width: 140px;
+}
+
+.compliance__reg-val {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--navy-dark);
+  text-align: right;
+}
+
+/* Cards */
+.compliance__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.compliance__card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.compliance__card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.compliance__card-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+}
+
+.compliance__card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--navy-dark);
+  margin-bottom: 4px;
+}
+
+.compliance__card-detail {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+@media (max-width: 960px) {
+  .compliance__inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
